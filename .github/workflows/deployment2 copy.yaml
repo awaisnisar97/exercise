@@ -1,6 +1,5 @@
 name: deployment 2
-on: 
-  push: 
+on: push
 jobs: 
   lint: 
     runs-on: ubuntu_latest
@@ -23,6 +22,6 @@ jobs:
       - name: Test code
         run: npm run test 
       - Name: Build code
-          run: npm run build 
+        run: npm run build 
       - Name: Deploy code 
         run: echo "deploying.."
